@@ -26,7 +26,4 @@ A simple web application that allows an admin to manage a network of agents.
 - Clean and maintainable code structure.  
 
 ## Screenshots  
-![Agent Management App Screenshot](path/to/screenshot.png)  
-
-## Video  
-[Link to video demonstration](link/to/video)
+![Agent Management App Screenshot](overview.png)  

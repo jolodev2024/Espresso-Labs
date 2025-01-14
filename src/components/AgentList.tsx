@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from 'react';
-import { useAgentContext } from '../context/AgentContext.tsx';
+import { useAgentContext } from '../context/AgentContext';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Button, Paper, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import AgentForm from './AgentForm.tsx'; 
+import AgentForm from './AgentForm'; 
 import { Agent } from '../types/Agent';
 
 interface AgentListProps {

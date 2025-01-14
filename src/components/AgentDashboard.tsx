@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Box, Button } from '@mui/material';
-import SearchBar from './SearchBar.tsx';
-import AgentList from './AgentList.tsx';
+import SearchBar from './SearchBar';
+import AgentList from './AgentList';
 
 interface AgentDashboardProps {
   searchTerm: string;

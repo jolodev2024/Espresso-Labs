@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useAgentContext } from '../context/AgentContext.tsx';
-import { Agent } from '../types/Agent.tsx';
+import { useAgentContext } from '../context/AgentContext';
+import { Agent } from '../types/Agent';
 import {
   Modal,
   Box,

@@ -1,10 +1,10 @@
 import React, { useState, useCallback } from 'react';
 import { Container } from '@mui/material';
-import { AgentProvider } from './context/AgentContext.tsx';
+import { AgentProvider } from './context/AgentContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AgentForm from './components/AgentForm.tsx';
-import AgentDetails from './components/AgentDetails.tsx';
-import AgentDashboard from './components/AgentDashboard.tsx'; // Import the new component
+import AgentForm from './components/AgentForm';
+import AgentDetails from './components/AgentDetails';
+import AgentDashboard from './components/AgentDashboard'; // Import the new component
 
 const App: React.FC = () => {
     const [isFormVisible, setFormVisible] = useState(false);

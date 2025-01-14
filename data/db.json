@@ -1,25 +1,11 @@
 {
   "agents": [
     {
-      "id": "1736710220008",
+      "id": "1736804374819",
       "name": "aaa",
       "email": "aaa@gmail.com",
-      "status": "Inactive",
-      "detail": "This is my agent"
-    },
-    {
-      "id": "1736766945588",
-      "name": "bbb",
-      "email": "bbb@gmail.com",
-      "status": "Inactive",
-      "detail": "This is another agency"
-    },
-    {
-      "id": "1736778017910",
-      "name": "abc",
-      "email": "abc@gmail.com",
       "status": "Active",
-      "detail": "This is abc information."
+      "detail": "This is information of agent"
     }
   ]
 }

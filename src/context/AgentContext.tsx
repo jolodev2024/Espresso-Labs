@@ -16,15 +16,19 @@ const initialState: State = {
 
 const AgentContext = createContext<{ state: State; dispatch: React.Dispatch<Action> } | undefined>(undefined);  
 
-const agentReducer = (state: State, action: Action): State => {  
-    switch (action.type) {  
-        case 'SET_AGENTS':  
-            localStorage.setItem('agents', JSON.stringify(action.payload));  
-            return { ...state, agents: action.payload };  
-        default:  
-            return state;  
-    }  
-};  
+const agentReducer = (state: State, action: Action): State => {
+    switch (action.type) {
+        case 'SET_AGENTS':
+            localStorage.setItem('agents', JSON.stringify(action.payload));
+            return { ...state, agents: action.payload };
+        case 'REMOVE_AGENT': // Add this case
+            const updatedAgents = state.agents.filter(agent => agent.id !== action.payload);
+            localStorage.setItem('agents', JSON.stringify(updatedAgents)); // Update local storage
+            return { ...state, agents: updatedAgents };
+        default:
+            return state;
+    }
+};
 
 export const AgentProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {  
     const [state, dispatch] = useReducer(agentReducer, initialState);  
